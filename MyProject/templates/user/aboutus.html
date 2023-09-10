@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="text-center fs-2 mt-2">
+
+    About Us  <i class="fa-solid fa-address-book"></i>
+</div>
+<style>
+    body{
+        background-color: white;
+    
+    }
+    #about-section {
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+
+.blockabout {
+    padding: 20px;
+    background: white;
+}
+
+.blockabout-inner {
+    padding: 30px;
+    border: 1px solid rgba(32, 33, 36, 0.1);
+}
+
+.sosmed-horizontal a i {
+    border: 1px solid #070707;
+    border-radius: 50%;
+    color: #070707;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.rey-btn {
+    border: 2px solid #070707;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s;
+}</style>
+
+
+
+<section id="about-section" class="pt-5 pb-5">
+    <div class="container-fluid">
+        <div class="red"></div>
+        <div class="row">
+            <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+                <div class="blockabout">
+                    <div class="blockabout-inner text-center text-sm-start">
+                        <div class="title-big pb-3 mb-3">
+                            <h3> <span class="text-uppercase fw-bold fs-1">Quick <b class="txt-mycolor">Pick</b></span></h3>
+                        </div>
+                        <p class="description-p text-muted pe-0 pe-lg-0">
+                            Quick Pick is your go-to destination for all your grocery needs. We provide a wide selection of fresh fruits, vegetables, milk, bread, masala, oil, and more. Our mission is to simplify your shopping experience, offering quality products with fast delivery right to your doorstep. Enjoy the convenience of online shopping with Quick Pick today.
+                        </p>
+                        <p class="description-p text-muted pe-0 pe-lg-0">This shorter version still captures the essence of Quick Pick while emphasizing the variety of products you offer. Feel free to use it as-is or make any adjustments to suit your branding.</p>
+                        <div class="sosmed-horizontal pt-3 pb-3">
+                            <a class="btn btn-outline-light btn-floating m-1 hover-zoom" href="https://www.facebook.com/manash.mishra.3998/" role="button">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn btn-outline-light btn-floating m-1 hover-zoom" href="https://www.instagram.com/manash.djmm/" role="button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            
+                        </div>
+                        <a href="#" class="btn rey-btn mt-3">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-5 mt-lg-0 ">
+                <figure class="potoaboutwrap">
+                    <img src="{% static 'images/about.avif'%}" alt="potoabout" style="height: 500px; width:500px"/>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

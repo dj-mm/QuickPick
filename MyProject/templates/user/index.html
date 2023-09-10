@@ -1,0 +1,240 @@
+{% extends 'base.html' %}
+{% load static %}
+<style>
+    :root {
+        --bgcolor: linear-gradient(60deg, #1DE9B6, #00E5FF);
+        --txtcolor: #00E5FF;
+    }
+
+    .bg-mycolor {
+        background: var(--bgcolor) !important;
+    }
+
+    .txt-mycolor {
+        color: var(--txtcolor) !important;
+    }
+
+    .social-icon:hover i {
+        text-shadow: #ff8800 -2px 2px 2px;
+        transform: scale(1.4);
+    }
+
+    
+
+    .ufooter {
+        min-height: 300px;
+
+    }
+
+    .bfooter {
+        min-height: 50px;
+    }
+    
+</style>
+{% block content %}
+<div class="row">
+<div class="col-sm-10 p-2 mx-auto">
+    <!-- start slider  -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/s1.avif'%}" style="max-height:350px; border-radius:20px "
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/s2.jpg'%}" style="max-height:350px; border-radius:20px "
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/s3.jpeg'%}" style="max-height:350px; border-radius:20px "
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- End slider  -->
+
+</div>
+</div>
+<div class="row slider">
+
+    <h1 class="text-center  mt-2">Offered Product</h1>
+    <div class="col-sm-4">
+        <marquee behavior="alternate" direction="up" height="300px">
+
+            <!-- Card Start -->
+            <div class="card mb-3 mt-3">
+                <div class="row g-0 ">
+                    <div class="col-md-4">
+                        <img src="{%static 'images/product1.avif'%}" style="max-height:120px"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">BranO Plus Brown Bread</h5>
+                            <p class="card-text">
+                                1 Unit || <s>40/-</s> <b class="fs-3 text-success">30/-</b><i
+                                    class="fa-solid fa-indian-rupee-sign"></i><br>
+                                <a href="#" class="btn btn-outline-primary">Cart <i
+                                        class="fa-solid fa-cart-shopping"></i> </a>
+                            </p>
+
+
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                    ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Card End -->
+        </marquee>
+
+    </div>
+    <div class="col-sm-4">
+        <marquee behavior="alternate" direction="up" height="300px">
+
+            <!-- Card Start -->
+            <div class="card mb-3 mt-3">
+                <div class="row g-0 ">
+                    <div class="col-md-4">
+                        <img src="{%static 'images/product1.avif'%}" style="max-height:120px"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">BranO Plus Brown Bread</h5>
+                            <p class="card-text">
+                                1 Unit || <s>40/-</s> <b class="fs-3 text-success">30/-</b><i
+                                    class="fa-solid fa-indian-rupee-sign"></i><br>
+                                <a href="#" class="btn btn-outline-primary">Cart <i
+                                        class="fa-solid fa-cart-shopping"></i> </a>
+                            </p>
+
+
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                    ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Card End -->
+        </marquee>
+
+    </div> <div class="col-sm-4">
+        <marquee behavior="alternate" direction="up" height="300px">
+
+            <!-- Card Start -->
+            <div class="card mb-3 mt-3">
+                <div class="row g-0 ">
+                    <div class="col-md-4">
+                        <img src="{%static 'images/product1.avif'%}" style="max-height:120px"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">BranO Plus Brown Bread</h5>
+                            <p class="card-text">
+                                1 Unit || <s>40/-</s> <b class="fs-3 text-success">30/-</b><i
+                                    class="fa-solid fa-indian-rupee-sign"></i><br>
+                                <a href="#" class="btn btn-outline-primary">Cart <i
+                                        class="fa-solid fa-cart-shopping"></i> </a>
+                            </p>
+
+
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                                    ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Card End -->
+        </marquee>
+
+    </div>
+
+
+
+    <div class="row category">
+        <h1 class="text-center">Category</h1>
+        {% for x in cdata %}
+        <div class="col-lg-2 col-md-4 col-sm-12">
+            <!-- start category  -->
+            <div class="card" style="width: 18rem;">
+                <img src="{../{x.cpic}}" class="card-img-top" alt="..."
+                    style="max-height: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title"><b>{{x.cname}}</b></h5>
+                   Date{{x.cdate}}
+                </div>
+            </div>
+            <!-- End category  -->
+
+        </div>
+
+    </div>
+    {% endfor %}
+</div>
+<div class="row product">
+    <div class="fs-2">Dairy,<b class="txt-mycolor fs-2">Bread & Eggs</b> </div>
+</div>
+<div class="col-lg-2 col-md-3 col-sm-12 mt-2">
+    <!-- start product  -->
+    <div class="card">
+        <img src="{% static 'images/product1.avif'%}" class="card-img-top">
+        <div class="card-body">
+            <b>BranO Plus Brown Bread </b><br>
+            1 unit||
+            <s>40/-</s> <b class="fs-3 text-success">30/-</b><i class="fa-solid fa-indian-rupee-sign"></i><br>
+
+
+            <div class="input-group">
+                <b class="input-group-text" id="btnm" onclick="funm()"><i class="fa-solid fa-minus"></i></b>
+                <input type="text" value="0" readonly id="txtcard" randomly class="form-control fs-4 text-center">
+                <b class="input-group-text" id="btnp"  onclick="funp()"><i class="fa-solid fa-plus"></i></b>
+
+            </div>
+            <input type="submit" class="btn bg-mycolor text-light mt-3" value="Add">
+
+
+        </div>
+    </div>
+
+
+    <!-- end product  -->
+
+
+</div>
+
+{% endblock %}
